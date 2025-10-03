@@ -4,4 +4,4 @@ build:
 	docker build -t ${IMAGE} .
 	docker run -t -v `pwd`/output:/mnt/output --entrypoint=/bin/bash ${IMAGE} -c "cp /output/installed_packages /mnt/output/"
 run: build
-	docker run -v "`pwd`":/work $(IMAGE) cnb003260113.xml | jq .
+	docker run -v "`pwd`":/work $(IMAGE)

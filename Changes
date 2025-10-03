@@ -1,4 +1,5 @@
 0.02
+ - Rewrite entrypoint to shell.
 
 0.01 2025-10-02T12:04:42+02:00
  - First version

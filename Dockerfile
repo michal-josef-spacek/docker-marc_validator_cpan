@@ -31,4 +31,4 @@ RUN dpkg-query -W -f='${Package} ${Version} ${Installed-Size}\n' > /output/insta
 
 WORKDIR /work
 
-ENTRYPOINT ["marc-validator"]
+ENTRYPOINT ["/usr/bin/bash"]
